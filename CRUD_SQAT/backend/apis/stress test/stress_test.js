@@ -39,7 +39,7 @@ export default function () {
     const responses = http.batch([req1, req2, req3, req4]);
 
     check(responses, {
-        'status is 500': (r) => r.status == 500,
+        'status is 500': (r) => r.status === 500,
     });
 
     sleep(1);
