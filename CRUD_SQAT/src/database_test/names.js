@@ -1,5 +1,5 @@
 const client = require('./students.js');
-async function getAllProducts(){
+async function getAllStudents(){
     try {
         const {rows: apellido} = await client.query(`
       SELECT * FROM products;
@@ -11,5 +11,5 @@ async function getAllProducts(){
 }
 
 module.exports = {
-    getAllProducts
+    getAllStudents
 };
